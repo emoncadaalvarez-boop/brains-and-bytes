@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brains and Bytes - Brain Awareness Week 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+/* Body y tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+    color: #333;
+}
+
+/* Encabezado moderno con imagen de la web y parallax */
+header {
+    position: relative;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('https://images.unsplash.com/photo-1581091870624-3e8de0f91a4d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    filter: brightness(0.65);
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+header h1, header p, header a {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    animation: fadeInDown 1.5s ease forwards;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+header a {
+    background: #ffeb3b;
+    color: #007bff;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+header a:hover {
+    background: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Animación */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Navegación */
+nav {
+    background-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 12px;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.1);
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Diseño tipo cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff, #cce6ff);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+ul.activities {
+    padding-left: 25px;
+}
+
+ul.activities li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    font-weight: 500;
+}
+
+ul.activities li::before {
+    content: "🧠";
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+}
+
+/* Bloque extra */
+.extra-info {
+    background-color: #cce6ff;
+    padding: 25px;
+    border-left: 6px solid #007bff;
+    border-radius: 15px;
+    margin-top: 45px;
+    font-size: 0.95rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.extra-info h3 {
+    color: #0056b3;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: 500;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+footer .author {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    font-style: italic;
+    color: #b2e0ff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header-bg"></div>
+    <h1>Brains and Bytes</h1>
+    <p>How Technology Helps Us Understand the Mind - Brain Awareness Week 2026</p>
+    <a href="#program">See the Program</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#audience">Audience</a></li>
+        <li><a href="#program">Program</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About the Project</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581091012184-32d0fbb918e1?auto=format&fit=crop&w=1000&q=80" alt="Brain and Technology">
+            <p><strong>Brains and Bytes</strong> is a science outreach project created to introduce high school and university students to the connection between the brain and technology. The goal is to show, in a simple and fun way, how computers and engineering tools can help us study how the brain works.</p>
+            <p>Through short talks, interactive activities, and live demonstrations with EEG, students will see how brain signals can be recorded and turned into digital information. The event encourages curiosity about how the mind works, helps students understand the basics of brain activity, and shows how neuroscience and computer science can work together to create new ideas and technologies.</p>
+            <p>The project supports the IBRO–Dana Brain Awareness Week Grants by promoting awareness and understanding of neuroscience in the public, showing that brain science extends beyond laboratories into real-world applications.</p>
+        </div>
+    </div>
+</section>
+
+<section id="audience">
+    <h2>Target Audience & Community Impact</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092331648-30f0f8d8b7b3?auto=format&fit=crop&w=1000&q=80" alt="Students learning">
+            <p>The main audience includes high school and university students from the local community around Tecnológico de Monterrey, Campus Guadalajara. Many are curious about science and technology but have limited exposure to how neuroscience connects with engineering and computing.</p>
+            <p>The event is also open to the general public interested in learning more about the brain and technology. By sharing knowledge in an accessible and engaging way, the project builds bridges between science and society, strengthening scientific culture in the community and inspiring young people and adults alike.</p>
+        </div>
+    </div>
+</section>
+
+<section id="program">
+    <h2>Three-Day Program (March 18-20, 2026)</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Day 1 - Introduction and Brain Basics</h3>
+            <img src="https://images.unsplash.com/photo-1581091012200-9d8b1d6c6a2b?auto=format&fit=crop&w=800&q=80" alt="Brain illustration">
+            <ul class="activities">
+                <li>Talk: “Meet Your Brain” – Explanation of the basic structure and functions of the brain.</li>
+                <li>Interactive Demo: “Exploring Brain Signals” – Observe how brain activity can be measured (EEG demo or simulation).</li>
+                <li>Workshop: “Neurons Network in Action” – Hands-on activity with models or games showing neuron communication.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Day 2 - Technology and Interfaces</h3>
+            <img src="https://images.unsplash.com/photo-1581090700223-3d16b81e39f0?auto=format&fit=crop&w=800&q=80" alt="Technology and Brain">
+            <ul class="activities">
+                <li>Talk: “Brain-Computer Interfaces: How Machines Read Minds” – Expert explains BCIs and applications.</li>
+                <li>Workshop: “EEG Demo” – Participants try basic brain signal recording and translation into computer commands.</li>
+                <li>Talk: “Neuroscience Meets Engineering” – Examples of neuroscience inspiring technology solutions.</li>
+                <li>Activity: Brain Signal Challenges – Interactive games linking brain signals to computer actions.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Day 3 - Application and Exploring</h3>
+            <img src="https://images.unsplash.com/photo-1581090700437-1c33d8d0e7c0?auto=format&fit=crop&w=800&q=80" alt="Brain workshop">
+            <ul class="activities">
+                <li>Talk: “Neuroscience and Computing” – Research opportunities and careers in engineering and computing.</li>
+                <li>Workshop: “Design Your Own BCI Idea” – Students work in groups to create simple brain-technology project concepts.</li>
+                <li>Talk: “Closing” – Summary and final questions.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="extra">
+    <div class="extra-info">
+        <h3>Visibility, Diversity & Inclusion, and Alignment with IBRO/Dana Goals</h3>
+        <p><strong>Visibility:</strong> The IBRO and Dana Foundation logos will be prominently displayed on all printed and digital materials, including posters, flyers, social media posts, and handouts. They will also appear in presentations during talks and workshops. The event website and promotional posts will clearly acknowledge IBRO and Dana as the funding organizations, ensuring maximum visibility before, during, and after the event.</p>
+        <p><strong>Diversity & Inclusion:</strong> The event will ensure balanced gender representation among speakers and panelists. Participation will be open to students from various schools and universities in the local community and beyond, promoting geographical diversity and including audiences that historically have had limited exposure to neuroscience.</p>
+        <p><strong>Alignment with IBRO/Dana Goals:</strong> This project directly supports IBRO and Dana’s mission by increasing public awareness of neuroscience, inspiring young people to explore brain science, and demonstrating how neuroscience connects with technology and education in accessible, hands-on ways.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Brains and Bytes © 2026 - Supported by IBRO/Dana Brain Awareness Week Grants</p>
+    <p class="author">Emmanuel Moncada Alvarez – Doctoral Student in Computational Sciences & Biomedical Engineer</p>
+</footer>
+
+<script>
+// Parallax sutil del encabezado
+window.addEventListener('scroll', function() {
+    const headerBg = document.querySelector('.header-bg');
+    headerBg.style.transform = 'translateY(' + window.scrollY * 0.3 + 'px)';
+});
+</script>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
